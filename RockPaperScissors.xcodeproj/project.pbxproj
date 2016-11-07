@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		92B0CB7D1DD13C5B005AFB99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0CB7C1DD13C5B005AFB99 /* AppDelegate.swift */; };
-		92B0CB7F1DD13C5B005AFB99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0CB7E1DD13C5B005AFB99 /* ViewController.swift */; };
+		92B0CB7F1DD13C5B005AFB99 /* ChoicesRPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0CB7E1DD13C5B005AFB99 /* ChoicesRPSViewController.swift */; };
 		92B0CB821DD13C5B005AFB99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B0CB801DD13C5B005AFB99 /* Main.storyboard */; };
 		92B0CB841DD13C5B005AFB99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B0CB831DD13C5B005AFB99 /* Assets.xcassets */; };
 		92B0CB871DD13C5B005AFB99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B0CB851DD13C5B005AFB99 /* LaunchScreen.storyboard */; };
 		92B0CB921DD13C5B005AFB99 /* RockPaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0CB911DD13C5B005AFB99 /* RockPaperScissorsTests.swift */; };
 		92B0CB9D1DD13C5B005AFB99 /* RockPaperScissorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0CB9C1DD13C5B005AFB99 /* RockPaperScissorsUITests.swift */; };
+		92B0CBAB1DD13EAF005AFB99 /* OutComesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0CBAA1DD13EAF005AFB99 /* OutComesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		92B0CB791DD13C5B005AFB99 /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B0CB7C1DD13C5B005AFB99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92B0CB7E1DD13C5B005AFB99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92B0CB7E1DD13C5B005AFB99 /* ChoicesRPSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoicesRPSViewController.swift; sourceTree = "<group>"; };
 		92B0CB811DD13C5B005AFB99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92B0CB831DD13C5B005AFB99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92B0CB861DD13C5B005AFB99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		92B0CB981DD13C5B005AFB99 /* RockPaperScissorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B0CB9C1DD13C5B005AFB99 /* RockPaperScissorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsUITests.swift; sourceTree = "<group>"; };
 		92B0CB9E1DD13C5B005AFB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92B0CBAA1DD13EAF005AFB99 /* OutComesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutComesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				92B0CB7C1DD13C5B005AFB99 /* AppDelegate.swift */,
-				92B0CB7E1DD13C5B005AFB99 /* ViewController.swift */,
+				92B0CB7E1DD13C5B005AFB99 /* ChoicesRPSViewController.swift */,
+				92B0CBAA1DD13EAF005AFB99 /* OutComesViewController.swift */,
 				92B0CB801DD13C5B005AFB99 /* Main.storyboard */,
 				92B0CB831DD13C5B005AFB99 /* Assets.xcassets */,
 				92B0CB851DD13C5B005AFB99 /* LaunchScreen.storyboard */,
@@ -259,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92B0CB7F1DD13C5B005AFB99 /* ViewController.swift in Sources */,
+				92B0CB7F1DD13C5B005AFB99 /* ChoicesRPSViewController.swift in Sources */,
+				92B0CBAB1DD13EAF005AFB99 /* OutComesViewController.swift in Sources */,
 				92B0CB7D1DD13C5B005AFB99 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
