@@ -27,22 +27,16 @@
                                 <accessibility key="accessibilityConfiguration" identifier="rock"/>
                                 <state key="normal" image="Paper"/>
                                 <connections>
-                                    <action selector="performRPSWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Xc-zj-E7Z"/>
+                                    <action selector="performRPSScissorsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UuA-Vr-bTd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Sx-81-3JG">
                                 <rect key="frame" x="284" y="173" width="75" height="65"/>
                                 <state key="normal" image="Rock"/>
-                                <connections>
-                                    <action selector="performRPSWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g7x-Yo-GEn"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLz-ug-KQd">
                                 <rect key="frame" x="150" y="374" width="75" height="65"/>
                                 <state key="normal" image="Scissors"/>
-                                <connections>
-                                    <action selector="performRPSWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogI-bX-U2G"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdW-vp-CiJ">
                                 <rect key="frame" x="148" y="536" width="78" height="21"/>
@@ -66,12 +60,55 @@
                     <connections>
                         <outlet property="papperButton" destination="TkC-UR-iDI" id="MNz-IJ-kf4"/>
                         <outlet property="rockButton" destination="7Sx-81-3JG" id="MC9-yv-bbU"/>
-                        <outlet property="scissorsButton" destination="vLz-ug-KQd" id="Ihg-vq-X4g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116" y="122.78860569715144"/>
+        </scene>
+        <!--Outcomes View Controller-->
+        <scene sceneID="3yu-Cw-6HA">
+            <objects>
+                <viewController storyboardIdentifier="OutcomesViewController" id="NSN-Fj-Mgk" customClass="OutcomesViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lOf-GL-9T9"/>
+                        <viewControllerLayoutGuide type="bottom" id="eLI-cY-6v1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Wf-TQ-Gqh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You win!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejj-rl-frJ">
+                                <rect key="frame" x="4" y="197" width="367" height="273"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ENA-Sq-nJQ">
+                                <rect key="frame" x="35" y="4" width="304" height="185"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" identifier="OutcomesViewController"/>
+                        <constraints>
+                            <constraint firstItem="ENA-Sq-nJQ" firstAttribute="leading" secondItem="0Wf-TQ-Gqh" secondAttribute="leadingMargin" constant="19" id="Bn3-hu-Q3Y"/>
+                            <constraint firstItem="Ejj-rl-frJ" firstAttribute="top" secondItem="ENA-Sq-nJQ" secondAttribute="bottom" constant="8" id="Sk0-je-2Ma"/>
+                            <constraint firstItem="Ejj-rl-frJ" firstAttribute="leading" secondItem="0Wf-TQ-Gqh" secondAttribute="leadingMargin" constant="-12" id="feN-Er-DCI"/>
+                            <constraint firstItem="ENA-Sq-nJQ" firstAttribute="top" secondItem="lOf-GL-9T9" secondAttribute="bottom" constant="-16" id="iSG-Tq-boE"/>
+                            <constraint firstItem="Ejj-rl-frJ" firstAttribute="top" secondItem="lOf-GL-9T9" secondAttribute="bottom" constant="177" id="kDT-Eg-Xr2"/>
+                            <constraint firstItem="eLI-cY-6v1" firstAttribute="top" secondItem="Ejj-rl-frJ" secondAttribute="bottom" constant="197" id="lR1-8D-Dnn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ejj-rl-frJ" secondAttribute="trailing" constant="-12" id="lbw-Lx-saB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ENA-Sq-nJQ" secondAttribute="trailing" constant="20" id="qh0-Ap-VVt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="winningImage" destination="ENA-Sq-nJQ" id="IGr-eI-OIZ"/>
+                        <outlet property="winningStringLabel" destination="Ejj-rl-frJ" id="7Gr-mh-ibq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10e-xu-pcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912.79999999999995" y="122.78860569715144"/>
         </scene>
     </scenes>
     <resources>

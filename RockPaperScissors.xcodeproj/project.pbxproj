@@ -14,6 +14,7 @@
 		92B0CB871DD13C5B005AFB99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B0CB851DD13C5B005AFB99 /* LaunchScreen.storyboard */; };
 		92B0CB921DD13C5B005AFB99 /* RockPaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0CB911DD13C5B005AFB99 /* RockPaperScissorsTests.swift */; };
 		92B0CB9D1DD13C5B005AFB99 /* RockPaperScissorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0CB9C1DD13C5B005AFB99 /* RockPaperScissorsUITests.swift */; };
+		92B0CBAD1DD63546005AFB99 /* OutcomesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0CBAC1DD63546005AFB99 /* OutcomesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		92B0CB981DD13C5B005AFB99 /* RockPaperScissorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B0CB9C1DD13C5B005AFB99 /* RockPaperScissorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsUITests.swift; sourceTree = "<group>"; };
 		92B0CB9E1DD13C5B005AFB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92B0CBAC1DD63546005AFB99 /* OutcomesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutcomesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				92B0CB7C1DD13C5B005AFB99 /* AppDelegate.swift */,
 				92B0CB7E1DD13C5B005AFB99 /* ChoicesRPSViewController.swift */,
 				92B0CB801DD13C5B005AFB99 /* Main.storyboard */,
+				92B0CBAC1DD63546005AFB99 /* OutcomesViewController.swift */,
 				92B0CB831DD13C5B005AFB99 /* Assets.xcassets */,
 				92B0CB851DD13C5B005AFB99 /* LaunchScreen.storyboard */,
 				92B0CB881DD13C5B005AFB99 /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				92B0CB7F1DD13C5B005AFB99 /* ChoicesRPSViewController.swift in Sources */,
 				92B0CB7D1DD13C5B005AFB99 /* AppDelegate.swift in Sources */,
+				92B0CBAD1DD63546005AFB99 /* OutcomesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

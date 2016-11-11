@@ -18,52 +18,62 @@ class ChoicesRPSViewController: UIViewController {
     
     
     
-    
-    
     func getComputerMove() -> Int {
         return Int((arc4random() % 3))
         
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+    func checkWinner(playerMove: Int, computerMove: Int) -> String {
+        
+        var winnerString: String = ""
+    
+        switch computerMove {
+        case 0 where playerMove == 2:
+            winnerString = "Scissors cuts paper"
+            
+        case 1 where playerMove == 0:
+            winnerString = "Paper covers rock"
+            
+        case 2 where playerMove == 1:
+            winnerString = "Rock crushes scissors"
+        default:
+            winnerString = "sorry, you lose, but a tie is also a loss."
+        }
+    
+    
+    
+        return winnerString
+    
     }
-
-
     
     
-    @IBAction func performRPS(sender: AnyObject)  {
+    
+    @IBAction func performRPSScissors(sender: AnyObject)  {
+        /* This is a function that gets called by the scissors button */
+       
+        var nextViewController: OutcomesViewController
         
-
-        
+        nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "OutcomesViewController") as! OutcomesViewController
         
         let computerMove = getComputerMove()
         
         
-        
         if let tag = sender.tag {
 
-
-            switch computerMove {
-                case 0 where sender.tag == 2:
-                    print("Scissors cuts paper. You win!")
-                
-                case 1 where sender.tag == 0:
-                     print("Paper covers rock. You win!")
-                
-                case 2 where sender.tag == 1:
-                print("Rock crushes scissors. You win!")
-            default:
-                     print("sorry, you lose, but a tie is also a loss.")
-            }
+            var winingString: String?
+            
+            winingString = checkWinner(playerMove: tag, computerMove: computerMove)
+            
+            nextViewController.winningString = winingString!
+            present(nextViewController, animated: true, completion: nil)
+  
         } else {
-            print("you have reached a nil value")
+            print("You returned a nil value")
         }
         
-
     }
 
-
 }
+
 
