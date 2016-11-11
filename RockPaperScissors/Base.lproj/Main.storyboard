@@ -73,24 +73,6 @@
             </objects>
             <point key="canvasLocation" x="116" y="122.78860569715144"/>
         </scene>
-        <!--Out Comes View Controller-->
-        <scene sceneID="C7N-Fp-Shc">
-            <objects>
-                <viewController id="ODy-bD-qu9" customClass="OutComesViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tF9-66-xK6"/>
-                        <viewControllerLayoutGuide type="bottom" id="xF9-OC-grr"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cKu-hT-I2R">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dLE-35-rIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1015" y="123"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Paper" width="75" height="65"/>

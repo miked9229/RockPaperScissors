@@ -33,37 +33,34 @@ class ChoicesRPSViewController: UIViewController {
 
     
     
-    @IBAction func performRPS(sender: AnyObject) {
+    @IBAction func performRPS(sender: AnyObject)  {
         
 
+        
         
         let computerMove = getComputerMove()
         
         
         
         if let tag = sender.tag {
-            print(computerMove)
-            print(sender.tag)
-            print("\n")
-            
+
+
             switch computerMove {
                 case 0 where sender.tag == 2:
                     print("Scissors cuts paper. You win!")
                 
                 case 1 where sender.tag == 0:
-                    print("Paper covers rock. You win!")
+                     print("Paper covers rock. You win!")
                 
-            case 2 where sender.tag == 1:
+                case 2 where sender.tag == 1:
                 print("Rock crushes scissors. You win!")
-                
             default:
-                    print("sorry, you lose, but a tie is also a loss.")
+                     print("sorry, you lose, but a tie is also a loss.")
             }
         } else {
-            print("We don't have a tag")
+            print("you have reached a nil value")
         }
-
-
+        
 
     }
 
