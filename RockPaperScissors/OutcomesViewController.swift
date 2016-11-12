@@ -39,16 +39,21 @@ class OutcomesViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         
+        print(winningString)
         
         if let winningString = winningString {
-            
-            
+            print("The string is unwrapped")
+        
             winningStringLabel.text? = winningString
             displayImage(winningString: winningString)
             
             
         }
         
+    }
+    @IBAction func dismiss() {
+        dismiss(animated: true, completion: nil)
+    
     }
 
 

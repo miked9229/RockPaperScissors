@@ -34,12 +34,15 @@
                                 <rect key="frame" x="284" y="173" width="75" height="65"/>
                                 <state key="normal" image="Rock"/>
                                 <connections>
-                                    <segue destination="NSN-Fj-Mgk" kind="modal" identifier="RPS" id="AOK-pQ-JTc"/>
+                                    <segue destination="NSN-Fj-Mgk" kind="modal" identifier="RPSRock" id="AOK-pQ-JTc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLz-ug-KQd">
                                 <rect key="frame" x="150" y="374" width="75" height="65"/>
                                 <state key="normal" image="Scissors"/>
+                                <connections>
+                                    <segue destination="NSN-Fj-Mgk" kind="modal" identifier="RPSScissors" id="Wi9-Fb-L38"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdW-vp-CiJ">
                                 <rect key="frame" x="148" y="536" width="78" height="21"/>
@@ -91,11 +94,23 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ENA-Sq-nJQ">
                                 <rect key="frame" x="35" y="4" width="304" height="185"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1S-mS-NGg">
+                                <rect key="frame" x="115" y="547" width="144" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Play Again!"/>
+                                <connections>
+                                    <action selector="dismiss" destination="NSN-Fj-Mgk" eventType="touchUpInside" id="4b9-LE-uHK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration" identifier="OutcomesViewController"/>
                         <constraints>
+                            <constraint firstItem="C1S-mS-NGg" firstAttribute="top" secondItem="Ejj-rl-frJ" secondAttribute="bottom" constant="77" id="2D7-lX-0UF"/>
+                            <constraint firstItem="C1S-mS-NGg" firstAttribute="leading" secondItem="0Wf-TQ-Gqh" secondAttribute="leadingMargin" constant="99" id="5hJ-xz-hyM"/>
                             <constraint firstItem="ENA-Sq-nJQ" firstAttribute="leading" secondItem="0Wf-TQ-Gqh" secondAttribute="leadingMargin" constant="19" id="Bn3-hu-Q3Y"/>
+                            <constraint firstItem="eLI-cY-6v1" firstAttribute="top" secondItem="C1S-mS-NGg" secondAttribute="bottom" constant="88" id="NNl-ey-Cwi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C1S-mS-NGg" secondAttribute="trailing" constant="100" id="RiL-6v-yAM"/>
                             <constraint firstItem="Ejj-rl-frJ" firstAttribute="top" secondItem="ENA-Sq-nJQ" secondAttribute="bottom" constant="8" id="Sk0-je-2Ma"/>
                             <constraint firstItem="Ejj-rl-frJ" firstAttribute="leading" secondItem="0Wf-TQ-Gqh" secondAttribute="leadingMargin" constant="-12" id="feN-Er-DCI"/>
                             <constraint firstItem="ENA-Sq-nJQ" firstAttribute="top" secondItem="lOf-GL-9T9" secondAttribute="bottom" constant="-16" id="iSG-Tq-boE"/>
@@ -120,4 +135,7 @@
         <image name="Rock" width="75" height="65"/>
         <image name="Scissors" width="75" height="65"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Wi9-Fb-L38"/>
+    </inferredMetricsTieBreakers>
 </document>

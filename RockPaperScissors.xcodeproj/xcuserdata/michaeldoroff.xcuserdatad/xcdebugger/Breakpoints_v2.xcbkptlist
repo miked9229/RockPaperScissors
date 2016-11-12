@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RockPaperScissors/ChoicesRPSViewController.swift"
-            timestampString = "500603107.081412"
+            timestampString = "500605697.921723"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "ChoicesRPSViewController"
             landmarkType = "3">
          </BreakpointContent>

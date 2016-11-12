@@ -49,15 +49,41 @@ class ChoicesRPSViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         
-        if segue.identifier == "RPS" {
+        if segue.identifier == "RPSRock" {
             
             let controller = segue.destination as! OutcomesViewController
             
             
+            let computerMove = getComputerMove()
+            
+            var winingString: String?
+            
+            winingString = self.checkWinner(playerMove: 1, computerMove: computerMove)
+            
+            
+            controller.winningString = winingString
+            
+            
+        }
+        
+        else if segue.identifier == "RPSScissors" {
+            
+            let controller = segue.destination as! OutcomesViewController
+            
+            
+            let computerMove = getComputerMove()
+            
+            var winingString: String?
+            
+            winingString = self.checkWinner(playerMove: 2, computerMove: computerMove)
+            
+            
+            controller.winningString = winingString
+            
             
         }
     }
-            
+    
 
     
     
