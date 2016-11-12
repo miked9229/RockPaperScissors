@@ -33,6 +33,9 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Sx-81-3JG">
                                 <rect key="frame" x="284" y="173" width="75" height="65"/>
                                 <state key="normal" image="Rock"/>
+                                <connections>
+                                    <segue destination="NSN-Fj-Mgk" kind="modal" identifier="RPS" id="AOK-pQ-JTc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLz-ug-KQd">
                                 <rect key="frame" x="150" y="374" width="75" height="65"/>
@@ -60,6 +63,7 @@
                     <connections>
                         <outlet property="papperButton" destination="TkC-UR-iDI" id="MNz-IJ-kf4"/>
                         <outlet property="rockButton" destination="7Sx-81-3JG" id="MC9-yv-bbU"/>
+                        <outlet property="scissorsButton" destination="vLz-ug-KQd" id="68C-c3-f9O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

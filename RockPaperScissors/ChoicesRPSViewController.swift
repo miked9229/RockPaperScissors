@@ -46,6 +46,19 @@ class ChoicesRPSViewController: UIViewController {
         return winnerString
     
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+        if segue.identifier == "RPS" {
+            
+            let controller = segue.destination as! OutcomesViewController
+            
+            
+            
+        }
+    }
+            
+
     
     
     
@@ -74,6 +87,14 @@ class ChoicesRPSViewController: UIViewController {
         
     }
 
+    
+    @IBAction func performRPSRock(sender: AnyObject) {
+        // This function is getting called by the prepare() and segue
+        
+        }
+        
+    
+        
 }
 
 
